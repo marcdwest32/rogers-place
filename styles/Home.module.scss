@@ -1,3 +1,5 @@
+$color-primary: blueviolet;
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -5,6 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('../public/closet.gif');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .main {
@@ -14,6 +21,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0px 2px 4px black;
+  }
+
+  h2 {
+    // color: $color-primary;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6rem;
+    text-shadow: 0px 2px 4px white;
+  }
+
+  a {
+    color: $color-primary;
+    font-size: 4rem;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0px 2px 4px black;
+  }
 }
 
 .footer {
@@ -23,20 +48,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.footer img {
-  margin-left: 0.5rem;
-}
+  img {
+    margin-left: 0.5rem;
+  }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  a {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .title a {
-  color: #0070f3;
+  color: $color-primary;
   text-decoration: none;
 }
 
@@ -95,8 +121,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: $color-primary;
+  border-color: $color-primary;
 }
 
 .card h3 {
